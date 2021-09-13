@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  text-align:center;
+}
+
+:root{
+  --pale-blue:hsl(225, 100%, 94%);
+  --Bright-blue :hsl(245, 75%, 52%);
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--blue: hsl(223, 47%, 23%);
+}
+
+
+body{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:0rem 1.5rem ;
+  background-color:var(--pale-blue);
+  height:100vh;
+}
+
+section.pattern-bckgrnd{
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:-10;
+  width:100%;
+}
+
+section.pattern-bckgrnd img{
+  width:100%;
+}
+
+section.order-summary{
+background:white;
+margin:4rem auto ;
+width:100%;
+border-radius:1.5rem;
+overflow:hidden;
+max-width:500px;
+}
+
+section.illustration-hero{
+  width:100%;
+}
+
+section.illustration-hero>img{
+  width:100%;
+}
+
+section.order-summary h2{
+  margin:1.5rem 0;
+  font-weight:700;
+}
+
+section.order-summary >p{
+  line-height:1.8rem;
+  padding:0 1.5rem 1.5rem;
+  color: var(--Desaturated-blue);
+  font-weight:700;
+}
+
+section.container{
+  background: var(--Very-pale-blue);
+  display:flex;
+  width:90%;
+  margin:0 auto;
+  justify-content: center;
+  align-items:center;
+  padding:0.8rem .8rem ;
+  border-radius:1rem;
+}
+
+section.container div.plan{
+  display:flex; 
+  flex-direction:column;
+  margin:0 1.5rem
+}
+
+
+section.container div.plan p{
+  text-align:left;
+  line-height:1.5rem;
+  font-weight:bold;
+}
+section.container div.plan span{
+  font-weight:normal;
+  font-size:0.95rem;
+  color: hsl(224, 23%, 55%);
+  font-weight:500;
+  font-family:inherit;
+  text-align:left;
+  padding:.25rem 0;
+}
+
+section.container div.change-plan a, a:-webkit-any-link{
+  font-weight:bold;
+  transition:all 200ms;
+  color:var(--Bright-blue);
+}
+
+section.container div.change-plan a:hover{
+  color:orange;
+  cursor: pointer;
+}
+
+section.order-summary button{
+display:block;
+margin:2rem auto;
+}
+
+
+button.pay-btn{
+  background:var(--Bright-blue);
+  color:white;
+  width:90%;
+  padding:1rem;
+  margin:1.5rem 0;
+  border:none;
+  box-shadow:0px 2px 15px var(--Bright-blue);
+  font-size:1.01rem;
+  font-family:inherit;
+  font-weight:bold;
+  border-radius:.8rem;
+  transition:all 200ms
+}
+
+button.pay-btn:hover{
+  background:rgb(26, 175, 26);
+  cursor:pointer;
+}
+
+button.cancel-btn{
+  border:none;
+  background:white;
+  font-size:1.05rem;
+  font-weight:bold;
+  color: var(--Desaturated-blue);
+  transition:all 200ms 
+}
+
+.cancel-btn:hover{
+color:red;
+cursor:pointer;
+}
+
+
+
+
+
+@media (min-width:500px){
+  :root{
+    font-size:18px;
+  }
+  section.pattern-bckgrnd{
+    height:50vh;
+  }
+  
+  section.pattern-bckgrnd img{
+    width:100%;
+    height:100%
+  }
+}
+
